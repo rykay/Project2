@@ -35,10 +35,10 @@ public class Spelling {
         trie.loadTrie();
         List<List<String>> suggestionList = new ArrayList<>();
         if (trie.search(token) == false) {
-            System.out.println("The token you've entered does not exist");
+            System.out.println("The token you've entered does not exist!");
         }
         if (count > token.length()) {
-            System.out.println("Please enter a valid count.");
+            System.out.println("Please enter a valid count!");
         }
         List<List<String>> stringList = trie.generatePrefixLists(count, root, token);//stores the lists of all words with count parts of prefix o, on, ono, onom, onoma...
 
